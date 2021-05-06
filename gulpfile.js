@@ -74,6 +74,11 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("refresh", function (done) {
+  server.reload();
+  done();
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
@@ -92,10 +97,6 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("refresh", function (done) {
-  server.reload();
-  done();
-});
 
 gulp.task("build", gulp.series("clean", "copy", "webp", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

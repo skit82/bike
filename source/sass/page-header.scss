@@ -1,0 +1,215 @@
+.page-header {
+  min-height: 825px;
+  background-image: url("../img/bike-desktop@1x.jpg"), linear-gradient(#0d0d0d, #262626);
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  background-size: 100% 825px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bike-desktop@2x.jpg");
+    // background-size: 100% 825px;
+  }
+}
+
+.page-header__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 878px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 265px;
+}
+
+.page-header__box {
+  display: flex;
+  flex-direction: column;
+  width: 393px;
+}
+
+.page-header__box h2 {
+  margin: 0;
+  padding: 0;
+  font-size: $font-size--h2;
+  line-height: $font-size--h2 + 18;
+  font-weight: 600;
+  color: $white;
+  letter-spacing: -0.005em;
+}
+
+.page-header__box p {
+  margin: 0;
+  margin-top: 24px;
+  font-weight: 300;
+  font-size: $font-size--h3;
+  line-height: $font-size--h3 + 12;
+  color: $white;
+  opacity: 0.8;
+}
+
+.page-header__logo {
+  display: block;
+  margin-bottom: 31px;
+}
+
+.page-header__button {
+  display: none;
+  border: none;
+}
+
+@media (max-width: 1023px) {
+  .page-header {
+    position: relative;
+    min-height: 340px;
+    background-image: url("../img/bike-tablet@1x.jpg"), linear-gradient(#0d0d0d, #262626);
+    background-size: 100% 340px;
+    background-position: center 0;
+    margin-top: 540px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bike-tablet@2x.jpg");
+    }
+  }
+
+  .page-header__wrapper {
+    max-width: 1023px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .page-header__inner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 0;
+    width: auto;
+  }
+
+  .page-header__box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .page-header__box h2 {
+    padding-right: 5px;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .page-header__box p {
+    padding-right: 5px;
+    margin-top: 20px;
+    display: block;
+    align-self: center;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    width: 62%;
+    letter-spacing: -0.005em;
+  }
+
+  .page-header__logo {
+    padding-left: 10px;
+    padding-top: 25px;
+    margin-bottom: 85px;
+  }
+
+  .page-header__button {
+    display: block;
+    position: absolute;
+    left: calc(100% - 50px);
+    width: 50px;
+    height: 50px;
+    background-color: $cyan;
+    cursor: pointer;
+
+    &--active {
+      background-color: #ffffff;
+      z-index: 9;
+      background-image: url("../img/close.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: -540px;
+      left: calc(100% - 50px);
+    }
+  }
+
+  .page-header__block {
+    display: block;
+    width: 23px;
+    height: 1px;
+    background-color: #000000;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 23px;
+      height: 1px;
+      background-color: #000000;
+      top: -7px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 23px;
+      height: 1px;
+      background-color: #000000;
+      top: 7px;
+      left: 0;
+    }
+  }
+
+  .page-header__block--active {
+    display: none;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    position: relative;
+    min-height: 390px;
+    min-width: 320px;
+    background-image: url("../img/bike-mobile@1x.jpg"), linear-gradient(#0d0d0d, #262626);
+    background-size: 100% 390px;
+    background-position: top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bike-mobile@2x.jpg");
+    }
+  }
+
+  .page-header__box {
+    padding-left: 10px;
+  }
+
+  .page-header__box h2 {
+    margin-left: -8px;
+  }
+
+  .page-header__box p {
+    width: 298px;
+    padding-left: 0;
+    letter-spacing: -0.005em;
+    margin-left: -5px;
+  }
+
+  .page-header__logo {
+    margin-bottom: 72px;
+    margin-left: 8px;
+  }
+}
