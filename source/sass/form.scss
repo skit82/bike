@@ -14,16 +14,17 @@
 
 .form input {
   padding-left: 27px;
-  font-weight: normal;
+  font-weight: 400;
   height: 48px;
   border: 1px solid #c9ccd4;
   border-radius: 4px;
   font-size: 15px;
   line-height: 24px;
+  font-family: inherit;
   margin-bottom: 20px;
 
   &::placeholder {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 15px;
     color: #1c1c1c;
     opacity: 0.5;
@@ -39,31 +40,33 @@
 }
 
 .form__title {
-  margin: 7px 0 20px;
+  margin: 5px 0 20px;
   font-weight: 600;
-  font-size: 17px;
-  line-height: 28px;
+  font-size: $font-size--middle + 2;
+  line-height: $font-size--middle + 14;
   text-align: center;
-  color: #ffffff;
-  letter-spacing: -0.005em;
+  color: $white;
 }
 
 .form button {
+  display: block;
   background-color: $cyan;
   height: 51px;
   border: none;
   border-radius: 6px;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 21px;
+  font-weight: 700;
+  font-size: $font-size--middle + 1;
+  line-height: $font-size--middle + 7;
+  font-family: inherit;
   text-align: center;
-  color: #000000;
+  // letter-spacing: -0.005em;
+  color: $black;
   cursor: pointer;
 }
 
 @media (max-width: 1023px) {
   .form {
-    max-width: 42.8%;
+    max-width: 41.8%;
     margin: 113px auto 0 auto;
     position: relative;
     left: 0;
@@ -72,9 +75,9 @@
   }
 
   .form__title {
-    color: #000000;
-    font-size: 18px;
-    padding-top: 30px;
+    color: $black;
+    font-size: $font-size + 1;
+    padding-top: 32px;
     margin-bottom: 30px;
   }
 
@@ -89,16 +92,18 @@
 
 @media (max-width: 767px) {
   .form {
-    max-width: 90%;
+    max-width: 85.5%;
     padding-top: 0;
     margin: 102px auto 0 auto;
   }
 
   .form input {
+    font-size: $font-size--h3;
     padding-left: 24px;
   }
 
   .form__title {
-    margin-bottom: 20px;
+    font-weight: 700;
+    margin-bottom: 21px;
   }
 }

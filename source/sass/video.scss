@@ -1,0 +1,138 @@
+.video {
+  min-height: 706px;
+  background-color: #131314;
+  margin-bottom: 249px;
+  position: relative;
+}
+
+.video__wrapper {
+  max-width: 929px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+.video__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: $font-size--h3 + 10;
+  line-height: $font-size--h3 + 10;
+  color: $white;
+}
+
+.video__about {
+  text-align: center;
+  font-weight: 300;
+  font-size: $font-size;
+  line-height: $font-size + 12;
+  color: $white-op;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.video__content {
+  position: absolute;
+  content: "";
+  top: 282px;
+}
+
+.video__content-btn {
+  position: absolute;
+  content: "";
+  width: 65px;
+  height: 65px;
+  background-color: $cyan;
+  border-radius: 50%;
+  top: 229px;
+  left: 433px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-color: $cyan;
+  }
+}
+
+.video__icon-play {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+@media (max-width: 1023px) {
+  .video {
+    min-height: 413px;
+    margin-bottom: 155px;
+  }
+
+  .video img {
+    width: 503px;
+    height: 282px;
+  }
+
+  .video__wrapper {
+    max-width: 503px;
+    padding-top: 70px;
+  }
+
+  .video__title {
+    font-size: $font-size--h3 + 4;
+    margin-bottom: 22px;
+  }
+
+  .video__about {
+    max-width: 429px;
+  }
+
+  .video__content {
+    top: 216px;
+  }
+
+  .video__content-btn {
+    left: 207px;
+    top: 96px;
+    width: 90px;
+    height: 90px;
+    background-image: url("../img/icon-play-tablet.svg");
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .video {
+    min-height: 384px;
+    min-width: 320px;
+    margin-bottom: 119px;
+  }
+
+  .video img {
+    width: 288px;
+    height: 162px;
+  }
+
+  .video__wrapper {
+    padding: 0 15px;
+    max-width: 320px;
+    padding-top: 85px;
+  }
+
+  .video__title {
+    letter-spacing: -0.005em;
+  }
+
+  .video__content {
+    top: 272px;
+  }
+
+  .video__content-btn {
+    width: 65px;
+    height: 65px;
+    background-image: url("../img/icon-play.svg");
+    background-position: center;
+    left: 112px;
+    top: 46px;
+  }
+}
