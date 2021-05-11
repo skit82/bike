@@ -11,7 +11,7 @@
   padding-top: 120px;
 }
 
-.video__title {
+.video h2 {
   margin-top: 0;
   margin-bottom: 20px;
   text-align: center;
@@ -21,7 +21,7 @@
   color: $white;
 }
 
-.video__about {
+.video p {
   text-align: center;
   font-weight: 300;
   font-size: $font-size;
@@ -78,12 +78,12 @@
     padding-top: 70px;
   }
 
-  .video__title {
+  .video h2 {
     font-size: $font-size--h3 + 4;
     margin-bottom: 22px;
   }
 
-  .video__about {
+  .video p {
     max-width: 429px;
   }
 
@@ -119,7 +119,7 @@
     padding-top: 85px;
   }
 
-  .video__title {
+  .video h2 {
     letter-spacing: -0.005em;
   }
 

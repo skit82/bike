@@ -5,7 +5,7 @@
   padding-bottom: 69px;
 }
 
-.about-us__title {
+.about-us h2 {
   font-size: $font-size--h3 + 8;
   line-height: $font-size--h3 + 10;
   // letter-spacing: 0.005em;
@@ -78,7 +78,7 @@
     margin-bottom: 40px;
   }
 
-  .about-us__title {
+  .about-us h2 {
     font-size: $font-size--h3 + 3;
     line-height: $font-size--h3 + 21;
     margin-bottom: 30px;
@@ -100,7 +100,7 @@
     padding-right: 0;
   }
 
-  .about-us__title {
+  .about-us h2 {
     margin-bottom: 30px;
   }
 
