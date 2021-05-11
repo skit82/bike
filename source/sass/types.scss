@@ -120,7 +120,7 @@
   }
 
   .types img {
-    width: 270px;
+    max-width: 270px;
     height: 300px;
   }
 
@@ -195,6 +195,7 @@
     margin-top: -8px;
     overflow: hidden;
     padding-bottom: 10px;
+    padding-top: 50px;
   }
 
   .types__wrapper {
