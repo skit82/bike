@@ -7,8 +7,8 @@
 
 .types__wrapper {
   max-width: 1266px;
-  padding-left: 58px;
-  padding-right: 33px;
+  padding-left: 46px;
+  padding-right: 46px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -31,15 +31,16 @@
 }
 
 .types__inner a {
-  margin-bottom: 30px;
-  margin-right: 25px;
+  min-height: 700px;
+  margin-bottom: 60px;
+  // margin-right: 25px;
 
   &:hover {
     opacity: 0.7;
   }
 }
 
-.types__inner a:nth-child(even) {
+.types__link--box2 {
   padding-top: 39px;
   position: relative;
   z-index: 9;
@@ -65,8 +66,8 @@
   }
 }
 
-.types__inner a:nth-child(3n+1) {
-  padding-top: 10px;
+.types__link--box1 {
+  // padding-top: 10px;
   position: relative;
   z-index: 9;
 
@@ -82,7 +83,7 @@
   }
 }
 
-.types__inner a:nth-child(3n+3) {
+.types__link--box3 {
   position: relative;
 
   &::before {
@@ -103,7 +104,7 @@
   margin-top: 0;
   text-align: center;
   margin-bottom: 50px;
-  margin-left: -27px;
+  // margin-left: -27px;
   letter-spacing: -0.005em;
   color: $very-dark;
 }
@@ -125,7 +126,8 @@
   }
 
   .types__wrapper {
-    padding: 0 40px;
+    max-width: 667px;
+    padding: 0;
   }
 
   .types h2 {
@@ -142,12 +144,13 @@
   }
 
   .types__inner a {
+    min-height: 0;
     margin-bottom: 0;
     margin-right: 15px;
     margin-left: 5px;
   }
 
-  .types__inner a:nth-child(3n+1) {
+  .types__link--box1 {
     padding-top: 0;
 
     &::before {
@@ -159,7 +162,7 @@
     }
   }
 
-  .types__inner a:nth-child(even) {
+  .types__link--box2 {
     padding-top: 0;
 
     &::before {
@@ -171,7 +174,7 @@
     }
   }
 
-  .types__inner a:nth-child(3n+3) {
+  .types__link--box3 {
     &::before {
       width: 68px;
       height: 68px;
@@ -219,13 +222,13 @@
     margin-left: 10px;
   }
 
-  .types__inner a:nth-child(3n+1) {
+  .types__link--box1 {
     &::before {
       left: -25px;
     }
   }
 
-  .types__inner a:nth-child(3n+3) {
+  .types__link--box3 {
     &::before {
       left: 218px;
     }

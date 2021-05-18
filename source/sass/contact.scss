@@ -26,11 +26,12 @@
 }
 
 .contact__map {
-  min-height: 530px;
+  height: 530px;
   background-image: url("../img/map-desktop@1x.jpg");
   background-size: auto 530px;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/map-desktop@2x.jpg");
@@ -53,11 +54,12 @@
   }
 
   .contact__map {
-    min-height: 545px;
+    height: 545px;
     background-image: url("../img/map-tablet@1x.jpg");
     background-size: auto 545px;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/map-tablet@2x.jpg");
@@ -83,11 +85,12 @@
   }
 
   .contact__map {
-    min-height: 250px;
+    height: 250px;
     background-image: url("../img/map-mobile@1x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/map-mobile@2x.jpg");

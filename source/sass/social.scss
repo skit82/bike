@@ -38,10 +38,18 @@
 
 .social__icon-mail {
   margin-right: 15px;
+
+  &:hover {
+    fill: #000000;
+  }
 }
 
 .social__icon-phone {
   margin-right: 18px;
+
+  &:hover {
+    fill: #000000;
+  }
 }
 
 @media (max-width: 1023px) {
