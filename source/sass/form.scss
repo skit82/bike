@@ -62,6 +62,11 @@
   // letter-spacing: -0.005em;
   color: $black;
   cursor: pointer;
+
+  &:hover {
+    background-color: $gray--lighter;
+    color: $white;
+  }
 }
 
 @media (max-width: 1023px) {

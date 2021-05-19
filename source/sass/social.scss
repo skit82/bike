@@ -20,8 +20,13 @@
   margin-bottom: 10px;
 }
 
-.social__link {
+.social__link p {
+  margin: 0;
   color: $black-bg;
+
+  &:hover {
+    color: $black;
+  }
 }
 
 .social__link--tel {
@@ -38,18 +43,18 @@
 
 .social__icon-mail {
   margin-right: 15px;
-
-  &:hover {
-    fill: #000000;
-  }
 }
 
 .social__icon-phone {
   margin-right: 18px;
+}
 
-  &:hover {
-    fill: #000000;
-  }
+.social__link:hover .social__icon-mail {
+  opacity: 0.5;
+}
+
+.social__link:hover .social__icon-phone {
+  opacity: 0.5;
 }
 
 @media (max-width: 1023px) {

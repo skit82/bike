@@ -7,8 +7,8 @@
 
 .types__wrapper {
   max-width: 1266px;
-  padding-left: 46px;
-  padding-right: 46px;
+  padding-left: 56px;
+  padding-right: 36px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -33,7 +33,7 @@
 .types__inner a {
   min-height: 700px;
   margin-bottom: 60px;
-  // margin-right: 25px;
+  margin-right: 20px;
 
   &:hover {
     opacity: 0.7;

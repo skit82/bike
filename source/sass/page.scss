@@ -2,9 +2,19 @@
   height: 100%;
 }
 
-// .page-body {
-// min-height: 100%;
-// display: grid;
-// grid-template-rows: min-content 1fr min-content;
-// align-content: start;
-// }
+.page-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  flex: 0 0 auto;
+}
+
+.page-main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  flex: 0 0 auto;
+}
