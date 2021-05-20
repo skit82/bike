@@ -60,14 +60,16 @@
     background-color: #ffffff;
     padding: 0;
     padding-top: 100px;
+    //padding-top: 160px;
     width: 100%;
     z-index: 9;
-    // max-height: 568px;
+    //max-height: 568px;
     min-height: 540px;
 
     &--active {
       display: block;
       margin-top: -540px;
+      //margin-top: -600px;
     }
   }
 
@@ -121,6 +123,7 @@
   .main-nav {
     left: 0;
     width: 100%;
+    height: 100vh;
   }
 
   .main-nav__item {
